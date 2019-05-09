@@ -31,9 +31,17 @@ class EventNameInput extends React.Component
     onConfirmButtonClick = () =>
     {
         const {eventName} = this.state;
-        Function.setEventName(eventName);
-        message.success('新建活动成功');
-        this.props.history.push(PAGE_ID_TO_ROUTE[PAGE_ID.EVENT_PAGE]);
+        if (eventName.length !== 0)
+        {
+            Function.setEventName(eventName);
+            message.success('新建活动成功');
+            this.props.history.push(PAGE_ID_TO_ROUTE[PAGE_ID.EVENT_PAGE]);
+        }
+        else
+        {
+            message.warning('请填写活动名');
+        }
+
     };
 
     render()

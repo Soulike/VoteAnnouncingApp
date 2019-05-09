@@ -5,9 +5,9 @@ function RootView(props)
 {
     const {children} = props;
     return (
-        <main className={Style.Root}>
+        <div className={Style.Root}>
             {children}
-        </main>
+        </div>
     );
 }
 

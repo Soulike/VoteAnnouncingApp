@@ -40,8 +40,8 @@ class EventPage extends React.Component
             peopleList,
         });
 
-        // 以下是测试代码
-        /*import('faker').then(faker =>
+        /*// 以下是测试代码
+        import('faker').then(faker =>
         {
             const {peopleList} = this.state;
             for (let i = 0; i < 20; i++)
