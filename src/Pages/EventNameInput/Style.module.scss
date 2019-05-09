@@ -1,0 +1,19 @@
+.EventNameInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .formWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        width: 400px;
+
+        .eventNameInput {
+            text-align: center;
+        }
+    }
+}
