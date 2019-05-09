@@ -1,3 +1,20 @@
 .EventPage {
 
+    .addButtonWrapper {
+        position: fixed;
+        right: 100px;
+        bottom: 50px;
+
+        .addButton {
+            width: 60px;
+            height: 60px;
+            transition: 0.5s;
+            font-size: 40px;
+            font-weight: bold;
+
+            &:hover {
+                transform: rotate(180deg);
+            }
+        }
+    }
 }

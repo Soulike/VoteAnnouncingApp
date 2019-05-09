@@ -1,3 +1,18 @@
 .TopBar {
+    height: 50px;
+    background-color: #333;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 3px #000;
+    font: {
+        weight: bold;
+        family: sans-serif;
+        size: 25px;
+    }
 
+    .eventName {
+        margin-right: 0.5em;
+    }
 }

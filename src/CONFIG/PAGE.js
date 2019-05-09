@@ -1,4 +1,5 @@
 import EventNameInput from '../Pages/EventNameInput';
+import EventPage from '../Pages/EventPage';
 
 export const PAGE_ID = {
     EVENT_NAME_INPUT: Symbol('EVENT_NAME_INPUT'),
@@ -12,5 +13,5 @@ export const PAGE_ID_TO_ROUTE = {
 
 export const PAGE_ID_TO_COMPONENT = {
     [PAGE_ID.EVENT_NAME_INPUT]: EventNameInput,
-    [PAGE_ID.EVENT_PAGE]: null,
+    [PAGE_ID.EVENT_PAGE]: EventPage,
 };
