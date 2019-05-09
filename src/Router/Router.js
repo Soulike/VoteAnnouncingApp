@@ -1,13 +1,13 @@
 import React from 'react';
-import {BrowserRouter, Redirect, Route, Switch} from 'react-router-dom';
+import {HashRouter, Redirect, Route, Switch} from 'react-router-dom';
 import {PAGE_ID, PAGE_ID_TO_COMPONENT, PAGE_ID_TO_ROUTE} from '../CONFIG';
-import RootView from '../Components/Root';
+import Root from '../Components/Root';
 
 export default () =>
 {
     return (
-        <BrowserRouter>
-            <RootView>
+        <HashRouter>
+            <Root>
                 <Switch>
                     {
                         Object.values(PAGE_ID).map(id => <Route path={PAGE_ID_TO_ROUTE[id]}
@@ -16,7 +16,7 @@ export default () =>
                     }
                     <Route children={<Redirect to={PAGE_ID_TO_ROUTE[PAGE_ID.EVENT_NAME_INPUT]} />} />
                 </Switch>
-            </RootView>
-        </BrowserRouter>
+            </Root>
+        </HashRouter>
     );
 };
