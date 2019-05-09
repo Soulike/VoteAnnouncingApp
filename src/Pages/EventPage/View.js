@@ -9,6 +9,7 @@ import Input from 'antd/lib/input';
 import VoteStatus from './Components/VoteStatus';
 import Empty from 'antd/lib/empty';
 import BackTop from 'antd/lib/back-top';
+import Icon from 'antd/lib/icon';
 
 function EventPage(props)
 {
@@ -51,7 +52,7 @@ function EventPage(props)
                             type={'primary'}
                             className={Style.addPeopleButton}
                             onClick={onAddPeopleButtonClick}>
-                        +
+                        <Icon type={'plus'} />
                     </Button>
                 </Tooltip>
             </div>
