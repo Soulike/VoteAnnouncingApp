@@ -1,0 +1,38 @@
+.VoteStatus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #DDD;
+    height: 75px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 0 20px;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .rightWrapper > button {
+        margin: 0 0.5em;
+    }
+
+    .tagWrapper {
+        margin-right: 0.5em;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .peopleName {
+
+    }
+
+    .numberOfVote {
+        font-size: 20px;
+        height: 1.5em;
+        min-width: 1.25em;
+        display: flex;
+        align-items: center;
+    }
+}

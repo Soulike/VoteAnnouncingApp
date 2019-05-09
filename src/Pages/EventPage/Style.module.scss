@@ -1,11 +1,28 @@
 .EventPage {
 
-    .addButtonWrapper {
+    .voteStatusList {
+
+        .voteStatusWrapper {
+            margin: 25px 10px;
+        }
+
+        .emptyWrapper {
+            margin-top: 100px;
+        }
+    }
+
+    .backToTopButton {
+        position: fixed;
+        left: 50px;
+        bottom: 50px;
+    }
+
+    .addPeopleButtonWrapper {
         position: fixed;
         right: 100px;
         bottom: 50px;
 
-        .addButton {
+        .addPeopleButton {
             width: 60px;
             height: 60px;
             transition: 0.5s;
