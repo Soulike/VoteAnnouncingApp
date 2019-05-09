@@ -60,8 +60,13 @@ function EventPage(props)
                    title={'添加人员'}
                    visible={addPeopleModalVisible}
                    onOk={onAddPeopleModalOk}
-                   onCancel={onAddPeopleModalCancel} width={300}>
-                <Input placeholder={'新人员的名字'} autoFocus={true} value={newPeopleName} onChange={onNewPeopleNameChange} />
+                   onCancel={onAddPeopleModalCancel}
+                   width={300}>
+                <Input placeholder={'新人员的名字'}
+                       autoFocus={true}
+                       value={newPeopleName}
+                       onChange={onNewPeopleNameChange}
+                       onPressEnter={onAddPeopleModalOk} />
             </Modal>
         </div>
     );

@@ -7,7 +7,7 @@ function TopBarView(props)
     const {eventName} = props;
     return (
         <div className={Style.TopBar}>
-            <span className={Style.eventName}>{eventName}</span>
+            {eventName}
         </div>
     );
 }

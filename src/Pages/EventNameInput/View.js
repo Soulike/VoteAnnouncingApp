@@ -19,7 +19,8 @@ function EventNameInputView(props)
                        className={Style.eventNameInput}
                        value={eventName}
                        onChange={onEventNameInputChange}
-                       autoFocus={true} />
+                       autoFocus={true}
+                       onPressEnter={onConfirmButtonClick} />
                 <Button type={'primary'} onClick={onConfirmButtonClick}>确定</Button>
             </div>
         </div>
